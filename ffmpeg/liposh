@@ -1,0 +1,19 @@
+#!/bin/bash
+lipo \
+-arch armv7 ffmpeg-armv7/libavcodec.a \
+-create -output lib/libavcodec.a
+lipo \
+-arch armv7 ffmpeg-armv7/libavformat.a \
+-create -output lib/libavformat.a
+lipo \
+-arch armv7 ffmpeg-armv7/libswscale.a \
+-create -output lib/libswscale.a
+lipo \
+-arch armv7 ffmpeg-armv7/libavutil.a \
+-create -output lib/libavutil.a
+lipo \
+-arch armv7 ffmpeg-armv7/libavdevice.a \
+-create -output lib/libavdevice.a
+lipo \
+-arch armv7 ffmpeg-armv7/libavfilter.a \
+-create -output lib/libavfilter.a

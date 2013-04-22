@@ -1,0 +1,13 @@
+#!/bin/bash
+ 
+ #Let's try to detect where Xcode.app is
+  
+  XCODEPATH=$(mdfind -name Xcode.app);
+   
+   #you can safely override the above with just assigning XCODEPATH path to your XCode app (say, /Applications/Xcode.app)
+    
+	if [ -n $xcodepath ]; then
+	  echo "XCode found at $XCODEPATH"
+	  else
+	    echo "XCode not found" && exit
+		fi

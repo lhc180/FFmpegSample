@@ -1,0 +1,10 @@
+#!/bin/bash 
+cp libavcodec/*.a lib 
+cp libavdevice/*.a lib 
+cp libavfilter/*.a lib 
+cp libavformat/*.a lib 
+cp libavresample/*.a lib 
+cp libavutil/*.a lib 
+cp libpostproc/*.a lib 
+cp libswresample/*.a lib 
+cp libswscale/*.a lib 
